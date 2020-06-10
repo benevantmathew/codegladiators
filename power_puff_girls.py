@@ -9,8 +9,8 @@ for line in sys.stdin.readlines():
     for x in range(count):
         numbs=numbs+[int(words[x])]
 N=numbs[0]
-inc=numbs[1:N]
-inv=numbs[N+1:N+N]
+inc=numbs[1:N+1]
+inv=numbs[N+1:N+N+1]
 
 x_compare_ini=math.floor(inv[0]/inc[0])
 for x in range(N-1):
