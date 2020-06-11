@@ -7,7 +7,6 @@ import numpy as np
 numbs_str=[]
 for line in sys.stdin.readlines():
     words=line.split()
-    count=len(words)
     numbs_str=numbs_str+words
 
 numbs1=np.array(numbs_str)
