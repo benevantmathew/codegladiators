@@ -1,5 +1,4 @@
-
-def main():    
+def main():
     T=int(input())
 
     for i in range(T):
@@ -12,7 +11,7 @@ def main():
         BB_in=input().split()
         BB=[]
         for x in BB_in:
-            BB.append(int(x))    
+            BB.append(int(x))
 
         #'Sorting the power arrays'
         GRev.sort()
@@ -20,13 +19,14 @@ def main():
 
         #'commencing the battle'
         
+
         count=0
         for x in BB:
-            for GR_index,y in enumerate(GRev):
+            for y in GRev:
                 if x<y:
                     count+=1
                     GRev.remove(y)
                     break
         print(count)
-    
+
 main()
